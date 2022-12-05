@@ -15,7 +15,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/v1/transactions")
+@RequestMapping("/transactions")
 public class TransactionController {
 
 	@Autowired
