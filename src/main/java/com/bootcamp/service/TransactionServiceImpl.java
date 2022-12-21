@@ -29,4 +29,10 @@ public class TransactionServiceImpl implements TransactionService {
 		return transactionRepository.save(transaction);
 	}
 
+	@Override
+	public Flux<Transaction> getAllLastTenTransaction(String cardNumber) {
+		return transactionRepository.findAllByCardNumberOrderByDateCreatedDesc(cardNumber)
+				.take(10);
+	}
+
 }

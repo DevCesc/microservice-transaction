@@ -9,5 +9,5 @@ public interface TransactionService {
 	
 	public Flux<Transaction> getAllTransactionsByClient(String codCliente,String cardNumber);
 	public Mono<Transaction> saveTransaction(Transaction transaction);
-	
+	Flux<Transaction> getAllLastTenTransaction(String cardNumber);
 }

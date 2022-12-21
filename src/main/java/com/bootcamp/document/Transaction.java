@@ -1,7 +1,5 @@
 package com.bootcamp.document;
 
-import java.sql.Date;
-
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -22,10 +20,10 @@ public class Transaction {
 
 	@Id
 	private ObjectId id;
-	//private int codTransaction;
+//	private int codTransaction;
 	private String cardNumber;
 	private String codClient;
-	//private Date date;
+	private String dateCreated;
 	private String destAccount;
 	private double monto;
 	private Operation operation;
